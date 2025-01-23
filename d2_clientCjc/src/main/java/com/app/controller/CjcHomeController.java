@@ -31,8 +31,8 @@ public class CjcHomeController {
 	@GetMapping("studcjc")
 	public List<StudentCjc> getAllData(){
 		String url="http://zuul/kn/studkn";
-		List list = rt.getForObject(url,List.class);
-		return list;
+		List list23= rt.getForObject(url,List.class);
+		return list23;
 		
 	}
 	
