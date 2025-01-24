@@ -36,6 +36,11 @@ public class CjcHomeController {
 		
 	}
 	
+	@GetMapping()
+	public StudentCjc getById() {
+		return null;
+	}
+	
 	@PutMapping("studcjc")
 	public String updateStudent(@RequestBody StudentCjc st) {
 		String url="http://zuul/kn/studkn";
