@@ -53,7 +53,7 @@ public class CjcHomeController {
 	public String deleteStudent(@PathVariable int id) {
 		String url="http://zuul/kn/studkn/"+id;
 		rt.delete(url);
-		return "Delete Student form id:"+id;
+		return "Delete Student by id:"+id;
 	}
 	
 	
