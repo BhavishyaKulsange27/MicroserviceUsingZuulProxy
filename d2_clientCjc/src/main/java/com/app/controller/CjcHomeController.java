@@ -36,8 +36,8 @@ public class CjcHomeController {
 		
 	}
 	
-	@GetMapping()
-	public StudentCjc getById() {
+	@GetMapping("studcjc/{id}")
+	public StudentCjc getById(@PathVariable int id) {
 		return null;
 	}
 	
