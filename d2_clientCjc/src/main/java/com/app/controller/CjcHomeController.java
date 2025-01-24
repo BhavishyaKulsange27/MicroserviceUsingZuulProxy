@@ -38,7 +38,9 @@ public class CjcHomeController {
 	
 	@GetMapping("studcjc/{id}")
 	public StudentCjc getById(@PathVariable int id) {
-		return null;
+		String url="http://zuul/kn/studkn"+id;
+		StudentCjc object = rt.getForObject(url,StudentCjc.class);
+		return object;
 	}
 	
 	@PutMapping("studcjc")
